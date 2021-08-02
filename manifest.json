@@ -1,0 +1,20 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Clash Royale Assistant - CR App",
+  "short_name": "Clash Royale As",
+  "scope": "/en/",
+  "display": "browser",
+  "start_url": "https://info@cr-app.ir.ir/en/",
+  "background_color": "transparent",
+  "theme_color": "transparent",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "images/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

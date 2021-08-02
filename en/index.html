@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Clash Royale Assistant - Sadra's Apps</title>
+<meta charset="UTF-8">
+<link rel="manifest" href="manifest.json" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="static/img/app-icon-512px-rounded.png" />
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(static/img/screenshots-1.jpg);
+    min-height: 100%;
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%;background-color:#302f3d; ">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#screenshots" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+        onclick="closeNav()">Screenshots</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </span>
+
+
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:64px 16px" id="home">
+      <img class="w3-image w3-hide-small" src="static/img/app-icon-1024x500px.png" alt="Clash Royale Assistant"
+        style="min-width:500px" width="1500" height="1000">
+      <h1 class="w3-jumbo w3-hide-large w3-hide-medium"><b>Clash Royale Assistant</b></h1>
+      <!-- <p>Android App</p> -->
+
+      <button class="w3-button w3-block w3-green w3-hide-large w3-margin-bottom"
+        onclick="window.open('https://play.google.com/store/apps/details?id=at.sadra.app.clashroyaleassistant', '_blank'); return false;">
+        Play Store <i class="fa fa-android"></i></button>
+
+      <img src="static/img/screenshots-1.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="static/img/screenshots-1.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+        height="1333">
+
+
+      <div class=" w3-padding w3-hide-small w3-hide-medium w3-center" style="z-index: 10; ">
+        <img>
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Experience more fun with our app</h1>
+          <hr class="w3-opacity-max">
+          <p>Download from Google Play Store</p>
+          <button class="w3-button w3-green w3-round w3-padding-large w3-margin-top"
+            onclick="window.open('https://play.google.com/store/apps/details?id=at.sadra.app.clashroyaleassistant', '_blank'); return false;">
+            Play Store <i class="fa fa-android"></i>
+          </button>
+        </div>
+      </div>
+
+    </header>
+
+
+    <!-- Screenshots Section -->
+    <div class="w3-padding-32 w3-content" id="screenshots">
+      <h2 class="w3-text-grey">Screenshots</h2>
+      <hr class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="static/img/screenshots-7.jpg" style="width:100%">
+          <img src="static/img/screenshots-3.jpg" style="width:100%">
+          <img src="static/img/screenshots-6.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="static/img/screenshots-4.jpg" style="width:100%">
+          <img src="static/img/screenshots-5.jpg" style="width:100%">
+          <img src="static/img/screenshots-8.jpg" style="width:100%">
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <!-- End Screenshots Section -->
+    </div>
+
+    <button class="w3-button w3-block w3-green w3-hide-large w3-margin-bottom"
+      onclick="window.open('https://play.google.com/store/apps/details?id=at.sadra.app.clashroyaleassistant', '_blank'); return false;">Play
+      Store <i class="fa fa-android"></i></button>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <p>You can view your profile information, as well as view upcoming chests and copy the deck of your
+        opponents.<br />
+
+        And more coming soon...
+      </p>
+
+      <!-- App Statics -->
+      <!--     
+    <h3 class="w3-padding-16">App Statics</h3>
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-third w3-section">
+        <span class="w3-xlarge">986+</span><br>
+        Active Users
+      </div>
+      <div class="w3-third w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Request for features
+      </div>
+      <div class="w3-third w3-section">
+        <span class="w3-xlarge">1056+</span><br>
+        App Download
+      </div>
+    </div> -->
+
+      <div class=" w3-padding w3-hide-small w3-hide-medium w3-center" style="z-index: 10; ">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Experience more fun with our app</h1>
+          <hr class="w3-opacity-max">
+          <p>Download from Google Play Store</p>
+          <button class="w3-button w3-green w3-round w3-padding-large w3-margin-top"
+            onclick="window.open('https://play.google.com/store/apps/details?id=at.sadra.app.clashroyaleassistant', '_blank'); return false;">
+            Play Store <i class="fa fa-android"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="w3-left-align">
+        <h3 class="w3-padding-24">Our team</h3>
+        <img src="static/img/sadra.jpg" alt="Sadra Babai" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Sadra Babai.</span><span class="w3-small"> Flutter
+            Developer.</span></p>
+        <p>Me + Flutter become an App Developer!</p><br>
+
+        <img src="static/img/farhad.png" alt="Farhad Sarafi" class="w3-left w3-circle w3-margin-right"
+          style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Farhad Sarafi.</span> <span class="w3-small"> Graphic
+            Designer.</span></p>
+        <p>He is a visual communicators, who create visual concepts by hand or by using computer software.</p><br>
+      </div>
+      <!-- End About Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact Us</h2>
+      <p>Let's get in touch. Send us a message:</p>
+      <iframe id="invisible" name="invisible" style="display:none;"></iframe>
+      <div id="contact-response"> </div>
+      <form action="https://app.sadra.at/center/message-center.php" target="invisible" id="contactUs" method="POST">
+        <input type="hidden" value="Clash Royale Assistant - Home" name="Page">
+        <p> <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"> </p>
+        <p> <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email/ Phone number" required name="Email"> </p>
+        <p> <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject">
+        </p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message">
+        </p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script type="text/javascript">
+    let frm = $('#contactUs');
+
+  frm.submit(function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+      type: frm.attr('method'),
+      url: frm.attr('action'),
+      data: frm.serialize(),
+      success: function (data) {
+        console.log('Submission was successful.');
+        $('#contact-response').html("<div class=\"w3-panel w3-green  w3-container\" onclick=\"this.parentElement.style.display='none';\"><h3>Success!</h3><p>The Message was sent.</p></div>");
+      },
+      error: function (data) {
+        console.log('An error occurred.');
+        $('#contact-response').html("<div class=\"w3-panel w3-blue-grey  w3-container\" onclick=\"this.parentElement.style.display='none';\"><h3>Error!</h3><p>The Message was not sent.</p></div>");
+      },
+    });
+  });
+
+  </script>
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

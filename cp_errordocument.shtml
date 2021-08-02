@@ -169,7 +169,7 @@
     </head>
     <body>
         <div class="container">
-            <section class="response-info">
+            <secion class="response-info">
                 <span class="status-code"><!--#echo var="code" --></span>
                 <span class="status-reason"><!--#echo var="reason" --></span>
             </section>
